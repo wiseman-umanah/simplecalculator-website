@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Web Calculator</title>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+    </head>
+    <body>
+        <div class="calculator-body">
+            <div class="display1">
+                <div class="display"> </div>
+                <div class="display2"></div>
+            </div>
+            <div class="operations">
+                <button class="num" onclick="cleared(), auto()">C</button>
+                <button class="num" onclick="clearDat(), auto()">DEL</button>
+                <div></div>
+                <div></div>
+                <button class="num" onclick="cal(`(`), auto()">&#40;</button>
+                <button class="num" onclick="cal(`)`), auto()">	&#41;</button>
+                <button class="num1" onclick="cal('^'), auto()">^</button>
+                <button class="num1" onclick="cal(' / '), auto()">/</button>
+                <button class="num" onclick="cal(7), auto()">7</button>
+                <button class="num" onclick="cal(8), auto()">8</button>
+                <button class="num" onclick="cal(9), auto()">9</button>
+                <button class="num1" onclick="cal(' * '), auto()">*</button>
+                <button class="num" onclick="cal(4),auto()">4</button>
+                <button class="num" onclick="cal(5),auto()">5</button>
+                <button class="num" onclick="cal(6), auto()">6</button>
+                <button class="num1"  onclick="cal(' - '), auto()">-</button>
+                <button class="num" onclick="cal(1), auto()">1</button>
+                <button class="num" onclick="cal(2), auto()">2</button>
+                <button class="num" onclick="cal(3), auto()">3</button>
+                <button class="num1" onclick="cal(' + '), auto()">+</button>
+                <button class="num" onclick="cal('.'), auto()">.</button>
+                <button class="num" onclick="cal(0), auto()">0</button>
+                <button class="num" onclick="evaluat()">=</button>
+                <button class="num1" onclick="cal('%'), auto()">%</button>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>
